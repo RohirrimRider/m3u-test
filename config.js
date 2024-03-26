@@ -1,21 +1,4 @@
-var env = process.env.NODE_ENV ? 'Render':'local';
-
-var config = {
-    addon: 'started',
+module.exports = {
+	port = process.env.PORT || 8649,
+	host = process.env.HOST || "127.0.0.1",
 }
-
-switch (env) {
-    //Public server build.
-    case 'Render':
-		config.port = process.env.PORT
-        config.local = "hy.m3u.org"
-        break;
-
-    //Local sever build.
-    case 'local':
-		config.port = 3649
-        config.local = "http://127.0.0.1:" + config.port;
-        break;
-}
-
-module.exports = config;

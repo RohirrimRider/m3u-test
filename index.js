@@ -171,7 +171,7 @@ app.get('/:userConf/stream/:type/:id.json', function (req, res) {
 if (module.parent) {
   module.exports = app;
 } else {
-  app.listen(config.port, function () {
+  app.listen(config.port, config.host, function () {
   console.log(config)
 });
 }
