@@ -1,5 +1,7 @@
 FROM node:18.16.0-alpine as base
 
+RUN apk add --no-cache dumb-init
+
 WORKDIR /app
 
 COPY package*.json ./
@@ -10,6 +12,6 @@ COPY . .
 
 ENV NODE_ENV production
 
-EXPOSE 3649
+EXPOSE 8649
 
-CMD [ "node", "index.js" ]
+CMD [ "dumb-init", "--", "node", "index.js" ]

@@ -2,7 +2,7 @@ module.exports={
     id: "org.community.YourIPTV",
     version: "2.0.0",
     name: "Stremio IPTV",
-    logo: "https://hy-torrentio.surge.sh/configure_files/h_y-high-resolution-logo-transparent.png",
+    logo: "https://setplex.com/blog/wp-content/uploads/2017/08/iptv-business.jpg",
     description: "STREMIO IPTV",
     types: ["movie", "series","tv","channel"],
     background: "https://raw.githubusercontent.com/mik25/stremaline/main/blownaway.jpg",
